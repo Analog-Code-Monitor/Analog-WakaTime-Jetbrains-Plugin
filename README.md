@@ -1,0 +1,1 @@
+# Analog-WakaTime-Jetbrains-Plugin
