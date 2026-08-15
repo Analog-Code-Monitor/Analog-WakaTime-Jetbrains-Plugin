@@ -1,4 +1,4 @@
-package analogwakatime.com.analogwakatijetbrainsplugin
+package analogwakatime.com.analogwakatimejetbrainsplugin
 
 import analogwakatime.com.analogwakatimejetbrainsplugin.AnalogWakaTimeAppService
 import analogwakatime.com.analogwakatimejetbrainsplugin.AnalogWakaTimeProjectService

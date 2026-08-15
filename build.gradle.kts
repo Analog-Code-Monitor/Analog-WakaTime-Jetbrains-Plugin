@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "analogwakatime.com"
-version = providers.gradleProperty("pluginVersion").orElse("1.4.0").get()
+version = providers.gradleProperty("pluginVersion").orElse("2.0.0").get()
 
 repositories {
     mavenCentral()
