@@ -1,0 +1,63 @@
+<idea-plugin>
+    <id>analogwakatime.com.AnalogWakaTimeJetbrainsPlugin</id>
+    <name>Analog WakaTime</name>
+    <version>1.2.0</version>
+
+    <vendor email="support@analogwakatime.com" url="https://analogwakatime.com">
+        Analog WakaTime
+    </vendor>
+
+    <description><![CDATA[
+        Analog WakaTime for JetBrains IDEs tracks editor activity, keeps local offline history,
+        and synchronizes activity with the Analog WakaTime backend.
+    ]]></description>
+
+    <idea-version since-build="231" until-build="*"/>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="Analog WakaTime" displayType="BALLOON"/>
+
+        <postStartupActivity
+            implementation="analogwakatime.com.analogwakatimejetbrainsplugin.AnalogWakaTimeStartupActivity"/>
+
+        <statusBarWidgetFactory
+            id="AnalogWakaTimeStatusBar"
+            implementation="analogwakatime.com.analogwakatimejetbrainsplugin.AnalogWakaTimeStatusBarWidgetFactory"/>
+    </extensions>
+
+    <actions>
+        <group id="AnalogWakaTime.Actions" text="Analog WakaTime" popup="true">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+
+            <action
+                id="AnalogWakaTime.Login"
+                class="analogwakatime.com.analogwakatimejetbrainsplugin.AnalogWakaTimeLoginAction"
+                text="Login"/>
+
+            <action
+                id="AnalogWakaTime.Logout"
+                class="analogwakatime.com.analogwakatimejetbrainsplugin.AnalogWakaTimeLogoutAction"
+                text="Logout"/>
+
+            <action
+                id="AnalogWakaTime.SetApiToken"
+                class="analogwakatime.com.analogwakatimejetbrainsplugin.AnalogWakaTimeSetApiTokenAction"
+                text="Set API Token"/>
+
+            <separator/>
+
+            <action
+                id="AnalogWakaTime.ShowStats"
+                class="analogwakatime.com.analogwakatimejetbrainsplugin.AnalogWakaTimeShowStatsAction"
+                text="Show Stats"/>
+
+            <action
+                id="AnalogWakaTime.ForceSync"
+                class="analogwakatime.com.analogwakatimejetbrainsplugin.AnalogWakaTimeForceSyncAction"
+                text="Force Sync"/>
+        </group>
+    </actions>
+</idea-plugin>
