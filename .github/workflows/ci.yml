@@ -34,7 +34,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Run unit tests
-        run: gradle --stacktrace test
+        run: ./gradlew --stacktrace test
 
       - name: Build plugin
         run: gradle --stacktrace buildPlugin

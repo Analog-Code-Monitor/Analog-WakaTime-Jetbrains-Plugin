@@ -44,7 +44,7 @@ jobs:
           fi
 
       - name: Run tests and build release plugin
-        run: gradle --stacktrace -PpluginVersion=${{ steps.version.outputs.plugin_version }} test buildPlugin
+        run: ./gradlew --stacktrace -PpluginVersion=${{ steps.version.outputs.plugin_version }} test buildPlugin
 
       - name: Upload release test reports
         if: always()
