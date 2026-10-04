@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package analogwakatime.com.analogwakatimejetbrainsplugin
+=======
+package analogwakatime.com.analogwakatijetbrainsplugin
+>>>>>>> 3355d92 (start)
 
 import analogwakatime.com.analogwakatimejetbrainsplugin.AnalogWakaTimeAppService
 import analogwakatime.com.analogwakatimejetbrainsplugin.AnalogWakaTimeProjectService

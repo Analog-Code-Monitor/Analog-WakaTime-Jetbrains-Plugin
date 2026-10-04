@@ -1,5 +1,9 @@
 .gradle
 build/
+<<<<<<< HEAD
+=======
+!gradle/wrapper/gradle-wrapper.jar
+>>>>>>> 3355d92 (start)
 !**/src/main/**/build/
 !**/src/test/**/build/
 .kotlin
@@ -35,6 +39,7 @@ node_modules/
 .run
 .intellijPlatform/
 .idea/
+<<<<<<< HEAD
 gradle/*
 !gradle/wrapper/
 gradle/wrapper/*
@@ -43,3 +48,9 @@ gradle/wrapper/*
 .codex
 .env
 backend/
+=======
+gradle/
+.codex
+.env
+backend/
+>>>>>>> 3355d92 (start)
